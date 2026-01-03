@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display page</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      z-index: 99;
+    }
+    .background-image{
+      background-image: url("login page.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1920px;
+      height: 100vh;
+      position: fixed;
+    }
+    .maindiv{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      border: 1px solid black;
+      padding: 100px;
+      border-radius: 16px;
+      background: transparent;
+      backdrop-filter: blur(20px);
+      height: 280px;
+      width: 820px;
+      
+      
+    }
+    
+    
+    .four{
+      height: 250px;
+      width: 280px;
+      border: 1px solid black;
+      margin-bottom: 0px;
+      border-radius: 4px;
+      
+    }
+    .name{
+      font-family: sans-serif;
+      margin-top: 4px;
+      margin-left: 80px;
+      color: white;
+      font-size: 30px;
+    }
+    .name1{
+      margin-left: 80px;
+      font-family: sans-serif;
+      margin-top: 4px;
+      color: white;
+      font-size: 30px;
+      transition: opacity 0.15;
+    }
+    .four:hover{
+      opacity: 0.8;
+      height:300px ;
+      width: 320px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="maindiv">
+    
+      <div class="fourweeler">
+      <img class="four" src="Car parking.png" onclick="car()">
+      <h3 class="name">CARS</h3>
+
+    </div>
+    <div class="twoweeler">
+      <img class="four" src="Bike Parking.png" onclick="bike()">
+      <h3 class="name">BIKES</h3>
+
+    </div>
+    <div class="more">
+      <img class="four" src="van.png" onclick="inventory()">
+      <h3 class="name1">STORAGE</h3>
+    </div>
+
+    
+
+  </div>
+  <script>
+    function car(){
+      window.location.href="entry-slot.html";
+    }
+    function bike(){
+      window.location.href="entry-slot-bike.html";
+    }
+    function inventory(){
+      window.location.href="entry-slot-invetrory.html";
+    }
+
+
+  </script>
+</body>
+</html>
